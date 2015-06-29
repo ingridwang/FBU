@@ -46,7 +46,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1Ns-pm-1J3" kind="show" id="nMz-1b-WKT"/>
+                                    <segue destination="shK-80-EFT" kind="show" id="nMz-1b-WKT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6X-oJ-B93">
@@ -126,7 +126,6 @@
         <!--Play View Controller-->
         <scene sceneID="ESp-vR-lA1">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hXc-LG-0Bl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="SQN-On-rOV" customClass="PlayViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QgQ-rO-5xK"/>
@@ -190,18 +189,35 @@
                     <navigationItem key="navigationItem" id="Bwg-1N-wgh">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="pause" id="Kvt-DQ-6Lh">
                             <connections>
-                                <segue destination="pAq-1K-9p9" kind="presentation" id="CQu-J0-Z6K"/>
+                                <segue destination="aVF-Ay-2wZ" kind="presentation" id="JxZ-ry-Xlz"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXc-LG-0Bl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1140" y="1232"/>
+            <point key="canvasLocation" x="1140" y="1227"/>
         </scene>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="7iw-dK-jAZ">
+            <objects>
+                <navigationController id="aVF-Ay-2wZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iNU-wg-gZe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pAq-1K-9p9" kind="relationship" relationship="rootViewController" id="CVc-bT-8C0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XM5-df-Flw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="336" y="1985"/>
+        </scene>
+        <!--Pause View Controller-->
         <scene sceneID="IKf-Jc-bZS">
             <objects>
-                <viewController id="pAq-1K-9p9" sceneMemberID="viewController">
+                <viewController id="pAq-1K-9p9" customClass="PauseViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zUG-L5-F8V"/>
                         <viewControllerLayoutGuide type="bottom" id="MTl-0c-qXN"/>
@@ -213,25 +229,41 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KbO-A1-EMp">
                                 <rect key="frame" x="252" y="246" width="96" height="108"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9e-1m-Bzo">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9e-1m-Bzo">
                                         <rect key="frame" x="8" y="8" width="80" height="42"/>
                                         <color key="backgroundColor" red="0.69555808870000002" green="0.91155160869999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Resume">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="SQN-On-rOV" kind="show" id="93d-kc-ZGT"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1K-1D-5SW">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1K-1D-5SW">
                                         <rect key="frame" x="8" y="58" width="80" height="42"/>
                                         <color key="backgroundColor" red="0.69555808870000002" green="0.91155160869999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Quit">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="ZmO-5P-Qfc"/>
+                                            <constraint firstAttribute="width" constant="80" id="uH0-3A-W1W"/>
+                                        </constraints>
+                                        <state key="normal" title="Settings">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="shK-80-EFT" kind="show" id="Hfr-p5-U2x"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="X1K-1D-5SW" firstAttribute="leading" secondItem="T9e-1m-Bzo" secondAttribute="leading" id="0nn-sm-GAI"/>
+                                    <constraint firstItem="T9e-1m-Bzo" firstAttribute="top" secondItem="KbO-A1-EMp" secondAttribute="topMargin" id="9Qh-ON-Vkp"/>
+                                    <constraint firstItem="T9e-1m-Bzo" firstAttribute="centerX" secondItem="X1K-1D-5SW" secondAttribute="centerX" id="Yoa-FL-WIR"/>
+                                    <constraint firstItem="X1K-1D-5SW" firstAttribute="top" secondItem="T9e-1m-Bzo" secondAttribute="bottom" constant="8" id="dlK-37-QCD"/>
+                                    <constraint firstItem="T9e-1m-Bzo" firstAttribute="leading" secondItem="KbO-A1-EMp" secondAttribute="leadingMargin" id="fvz-O1-dhv"/>
                                     <constraint firstAttribute="width" constant="96" id="iMm-nB-KEJ"/>
                                     <constraint firstAttribute="height" constant="108" id="xQi-qY-YHn"/>
+                                    <constraint firstAttribute="bottom" secondItem="X1K-1D-5SW" secondAttribute="bottom" constant="8" id="zuz-Rz-2gK"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -241,6 +273,7 @@
                             <constraint firstAttribute="centerX" secondItem="KbO-A1-EMp" secondAttribute="centerX" id="xX2-cj-xmY"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Aze-ay-Ytc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WR8-zE-daL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -325,7 +358,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KuQ-Xb-nYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2628" y="1232"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eyt-ua-EQ5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="shK-80-EFT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vLe-8t-tUX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1Ns-pm-1J3" kind="relationship" relationship="rootViewController" id="vYm-3F-vlt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LTV-PA-b5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="1816" y="1232"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="93d-kc-ZGT"/>
+        <segue reference="Hfr-p5-U2x"/>
+    </inferredMetricsTieBreakers>
 </document>
