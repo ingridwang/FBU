@@ -9,7 +9,6 @@
 #import "PauseViewController.h"
 
 @interface PauseViewController ()
-@property (nonatomic,copy) void (^resumeBlock)(void);
 @end
 
 @implementation PauseViewController
