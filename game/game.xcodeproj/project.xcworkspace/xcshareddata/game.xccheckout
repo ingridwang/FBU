@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>4DEDC8B9-8AA3-4B44-94B8-56CA4D1C4701</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>game</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>640350283B9FCA28AC1C5EA9DA4A256F9B6D2C05</key>
 		<string>github.com:ingridwang/FBU.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>game/game.xcodeproj/project.xcworkspace</string>
+	<string>game/game.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>640350283B9FCA28AC1C5EA9DA4A256F9B6D2C05</key>
