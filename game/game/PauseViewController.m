@@ -26,18 +26,7 @@
 	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)presentPauseViewController {
-	PauseViewController *pvc = [[PauseViewController alloc] init];
-	
-	pvc.resumeBlock = ^{
-			};
-}
 
--(void)resumeBlock:(id)sender {
-	if (self.resumeBlock) {
-		self.resumeBlock();
-	}
-}
 /*
 #pragma mark - Navigation
 
