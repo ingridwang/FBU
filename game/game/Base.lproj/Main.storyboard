@@ -300,7 +300,7 @@
         <!--Settings-->
         <scene sceneID="r0l-qb-EqX">
             <objects>
-                <viewController id="1Ns-pm-1J3" sceneMemberID="viewController">
+                <viewController id="1Ns-pm-1J3" customClass="SettingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4wU-ET-htP"/>
                         <viewControllerLayoutGuide type="bottom" id="YDo-TY-Y6r"/>
@@ -355,6 +355,10 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="Inw-A3-61u"/>
+                    <connections>
+                        <outlet property="speedSwitch" destination="OXL-uH-IEU" id="IPG-Ve-n1X"/>
+                        <outlet property="timerSwitch" destination="wFQ-XV-YgR" id="7yy-Gp-o0A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KuQ-Xb-nYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,6 +9,9 @@
 #import "SettingsViewController.h"
 
 @interface SettingsViewController ()
+@property(weak, nonatomic) IBOutlet UISwitch* speedSwitch;
+@property(weak, nonatomic)IBOutlet UISwitch* timerSwitch;
+
 
 @end
 
@@ -24,6 +27,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)setSpeed{
+    
+}
+
+
+-(void)setTimer{
+    
+}
 /*
 #pragma mark - Navigation
 
