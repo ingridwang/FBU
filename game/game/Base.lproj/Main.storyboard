@@ -135,10 +135,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d8m-wB-5ci">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ra4-B6-s9A">
                                 <rect key="frame" x="16" y="556" width="150" height="44"/>
                                 <color key="backgroundColor" red="0.69555808870000002" green="0.91155160869999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -161,6 +157,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d8m-wB-5ci">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -229,16 +229,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KbO-A1-EMp">
                                 <rect key="frame" x="252" y="246" width="96" height="108"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9e-1m-Bzo">
-                                        <rect key="frame" x="8" y="8" width="80" height="42"/>
-                                        <color key="backgroundColor" red="0.69555808870000002" green="0.91155160869999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Resume">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="SQN-On-rOV" kind="show" id="93d-kc-ZGT"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1K-1D-5SW">
                                         <rect key="frame" x="8" y="58" width="80" height="42"/>
                                         <color key="backgroundColor" red="0.69555808870000002" green="0.91155160869999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -251,6 +241,16 @@
                                         </state>
                                         <connections>
                                             <segue destination="shK-80-EFT" kind="show" id="Hfr-p5-U2x"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9e-1m-Bzo">
+                                        <rect key="frame" x="8" y="8" width="80" height="42"/>
+                                        <color key="backgroundColor" red="0.69555808870000002" green="0.91155160869999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Resume">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="resume:" destination="pAq-1K-9p9" eventType="touchUpInside" id="RWX-VZ-LNo"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -380,7 +380,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="93d-kc-ZGT"/>
-        <segue reference="Hfr-p5-U2x"/>
+        <segue reference="nMz-1b-WKT"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -9,7 +9,7 @@
 #import "PauseViewController.h"
 
 @interface PauseViewController ()
-
+@property (nonatomic,copy) void (^resumeBlock)(void);
 @end
 
 @implementation PauseViewController
@@ -23,7 +23,22 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)resume:(UIButton *)sender {
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
 
+- (void)presentPauseViewController {
+	PauseViewController *pvc = [[PauseViewController alloc] init];
+	
+	pvc.resumeBlock = ^{
+			};
+}
+
+-(void)resumeBlock:(id)sender {
+	if (self.resumeBlock) {
+		self.resumeBlock();
+	}
+}
 /*
 #pragma mark - Navigation
 
