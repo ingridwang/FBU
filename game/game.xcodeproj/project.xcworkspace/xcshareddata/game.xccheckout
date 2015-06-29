@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4DEDC8B9-8AA3-4B44-94B8-56CA4D1C4701</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>640350283B9FCA28AC1C5EA9DA4A256F9B6D2C05</key>
+		<string>github.com:ingridwang/FBU.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>game/game.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>640350283B9FCA28AC1C5EA9DA4A256F9B6D2C05</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:ingridwang/FBU.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>640350283B9FCA28AC1C5EA9DA4A256F9B6D2C05</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>640350283B9FCA28AC1C5EA9DA4A256F9B6D2C05</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FBU</string>
+		</dict>
+	</array>
+</dict>
+</plist>
