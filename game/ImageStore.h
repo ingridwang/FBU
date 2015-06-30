@@ -11,8 +11,8 @@
 
 
 @interface ImageStore : NSObject
+@property(nonatomic)NSSet* photos;
 
--(void)setImage:(UIImage*)image forKey:(NSString*)key;
--(void)displayImage:(UIImage*)image;
+
 
 @end

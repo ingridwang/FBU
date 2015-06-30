@@ -17,6 +17,7 @@
 		A3286AB41B41F367007DF257 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3286AB31B41F367007DF257 /* PlayViewController.m */; };
 		A3286AB71B41F383007DF257 /* PauseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3286AB61B41F383007DF257 /* PauseViewController.m */; };
 		A3286ABA1B41F400007DF257 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3286AB91B41F400007DF257 /* SettingsViewController.m */; };
+		A39385101B430C43006856EA /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = A393850F1B430C43006856EA /* Photo.m */; };
 		A3E8151D1B41F9F000E99603 /* ImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E8151C1B41F9F000E99603 /* ImageStore.m */; };
 		A3E815261B4213AD00E99603 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E815251B4213AD00E99603 /* Game.m */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,8 @@
 		A3286AB61B41F383007DF257 /* PauseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseViewController.m; sourceTree = "<group>"; };
 		A3286AB81B41F400007DF257 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		A3286AB91B41F400007DF257 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		A393850E1B430C43006856EA /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		A393850F1B430C43006856EA /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 		A3E8151B1B41F9F000E99603 /* ImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageStore.h; path = ../ImageStore.h; sourceTree = "<group>"; };
 		A3E8151C1B41F9F000E99603 /* ImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageStore.m; path = ../ImageStore.m; sourceTree = "<group>"; };
 		A3E815241B4213AD00E99603 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
@@ -102,6 +105,8 @@
 				A3286A941B41C986007DF257 /* ViewController.m */,
 				A3E8151B1B41F9F000E99603 /* ImageStore.h */,
 				A3E8151C1B41F9F000E99603 /* ImageStore.m */,
+				A393850E1B430C43006856EA /* Photo.h */,
+				A393850F1B430C43006856EA /* Photo.m */,
 				A3286A961B41C986007DF257 /* Main.storyboard */,
 				A3286AB81B41F400007DF257 /* SettingsViewController.h */,
 				A3286AB91B41F400007DF257 /* SettingsViewController.m */,
@@ -247,6 +252,7 @@
 				A3286AB71B41F383007DF257 /* PauseViewController.m in Sources */,
 				A3286AB41B41F367007DF257 /* PlayViewController.m in Sources */,
 				A3E8151D1B41F9F000E99603 /* ImageStore.m in Sources */,
+				A39385101B430C43006856EA /* Photo.m in Sources */,
 				A3E815261B4213AD00E99603 /* Game.m in Sources */,
 				A3286A951B41C986007DF257 /* ViewController.m in Sources */,
 				A3286ABA1B41F400007DF257 /* SettingsViewController.m in Sources */,

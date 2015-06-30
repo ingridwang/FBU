@@ -19,4 +19,7 @@
 @property(nonatomic)BOOL timerOn;
 @property(nonatomic)BOOL speedUp;
 
+@property(nonatomic)int levelNumber;
+@property(nonatomic)int pointTotal;
+
 @end

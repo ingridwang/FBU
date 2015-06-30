@@ -7,13 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Photo.h"
+#import <Foundation/Foundation.h>
 
 @interface Game : NSObject
 @property(nonatomic)BOOL timerOn;
 @property(nonatomic)BOOL speedUp;
-@property(nonatomic, weak) UIImage *image;
-@property(nonatomic)int currentLevel;
 
+@property(nonatomic) Photo* photo;
+//@property(nonatomic)int currentLevel;
 
--(instancetype)initWithLevel:(int)level;
+-(instancetype)initWithPhoto: (Photo*)photo;
+
+//-(void)setSpeed:(BOOL)speed;
+//-(void)setTimer:(BOOL)timer;
+
 @end

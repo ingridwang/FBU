@@ -10,6 +10,5 @@
 
 @interface ViewController : UIViewController
 //property for score, level, current speed
-
 @end
 

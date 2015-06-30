@@ -9,8 +9,29 @@
 #import "Game.h"
 
 @implementation Game
--(instancetype)initWithlevel:(int)level{
-    self=[super init];
-    return self;
-}
+
+
+//-(instancetype)initWithPhoto: (Photo*)photo{
+//    
+//}
+
 @end
+//
+//
+//-(void)setSpeed:(BOOL)on{
+//    if(on){
+//        self.speed=YES;
+//    }
+//    else{
+//        self.speed=NO;
+//    }
+//}
+//
+//-(void)setTimer:(BOOL)on{
+//    if(on){
+//        self.timer=YES;
+//    }
+//    else{
+//        self.speed=NO;
+//    }
+//}

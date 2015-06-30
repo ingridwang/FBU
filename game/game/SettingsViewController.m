@@ -27,9 +27,11 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)setSpeed{
-    
-}
+//-(void)viewWillAppear:(BOOL)animated{
+//    [super viewWillAppear:animated];
+//    
+//}
+
 
 
 -(void)setTimer{
