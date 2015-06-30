@@ -21,5 +21,5 @@
 
 @property(nonatomic)int levelNumber;
 @property(nonatomic)int pointTotal;
-
+-(void) initializeImage;
 @end

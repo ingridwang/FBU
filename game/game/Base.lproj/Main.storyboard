@@ -316,7 +316,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9e-1m-Bzo">
                                         <rect key="frame" x="8" y="8" width="80" height="42"/>
                                         <color key="backgroundColor" red="0.69555808870000002" green="0.91155160869999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Resume">
+                                        <state key="normal" title="Restart">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -348,7 +348,7 @@
                                     <constraint firstAttribute="width" constant="80" id="Woj-BJ-sj9"/>
                                     <constraint firstAttribute="height" constant="42" id="gQk-fK-vX4"/>
                                 </constraints>
-                                <state key="normal" title="Quit">
+                                <state key="normal" title="Main Menu">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>

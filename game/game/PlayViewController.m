@@ -22,6 +22,10 @@
 @property (nonatomic, strong) UIDynamicItemBehavior *ballDynamicProperties;
 @property (nonatomic, strong) UIAttachmentBehavior *attacher;
 @property (nonatomic) BOOL *tapped;
+@property int dif;
+@property int win;
+@property int speed;
+@property(nonatomic)BOOL* won;
 @end
 
 
@@ -81,23 +85,44 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-    
+    self.backgroundView.layer.contents = nil;
+    self.ballView.layer.contents = nil;
+
     [super viewWillAppear:animated];
-    self.tapped = NO;
-    //fix the "playview controller show segue from main window and redo pause button"
-    self.navigationController.navigationBarHidden=YES;
-    UIImage *backgroundImage = [UIImage imageNamed: @"images/tj/tj.png"];
+    [self initializeImage];
     
+}
+-(void) initializeImage {
+    NSArray* set = [[NSArray alloc]initWithObjects:@"tj", @"kanye", nil];
+    int rand=arc4random()%2;
+    NSString *picString = set[rand];
+    self.tapped = NO;
+        //fix the "playview controller show segue from main window and redo pause button"
+    self.navigationController.navigationBarHidden=YES;
+    NSString *backgroundString = [NSString stringWithFormat:@"images/%@/%@.png", picString, picString];
+    NSString *cutoutString =[NSString stringWithFormat:@"images/%@/%@cutout.png", picString, picString];
+    UIImage *backgroundImage = [UIImage imageNamed: backgroundString];
+    
+    
+    if([picString  isEqual: @"kanye"] ) {
+        self.dif = -53;
+        self.win = 125;
+        self.speed = 10;
+    }else {
+        self.dif = -138;
+        self.win =198;
+        self.speed = 1;
+    }
     
     
     CGRect backFrame = CGRectMake([[UIScreen mainScreen] bounds].size.width/2 - backgroundImage.size.width/2, [[UIScreen mainScreen] bounds].size.height/2 - backgroundImage.size.height/2, MIN([[UIScreen mainScreen] bounds].size.width, backgroundImage.size.width), MIN([[UIScreen mainScreen] bounds].size.height, backgroundImage.size.height));
     self.backgroundView = [[UIView alloc] initWithFrame:backFrame];
-    self.backgroundView.layer.contents =(__bridge id)[UIImage imageNamed:@"images/tj/tj.png"].CGImage;
+    self.backgroundView.layer.contents =(__bridge id)[UIImage imageNamed:backgroundString].CGImage;
     [self.view addSubview:self.backgroundView];
     
-    UIImage *cutoutImage = [UIImage imageNamed:@"images/tj/tjcutout.png"];
+    UIImage *cutoutImage = [UIImage imageNamed:cutoutString];
     
-    CGRect ballFrame = CGRectMake(0, [[UIScreen mainScreen]bounds].size.height/2 -138,cutoutImage.size.width, cutoutImage.size.height);
+    CGRect ballFrame = CGRectMake(0, [[UIScreen mainScreen]bounds].size.height/2 + self.dif,cutoutImage.size.width, cutoutImage.size.height);
     self.ballView = [[UIView alloc] initWithFrame:ballFrame];
     [self.view addSubview:self.ballView];
     
@@ -108,8 +133,7 @@
         // Better ball and paddle graphics
     self.ballView.layer.shadowOffset = CGSizeMake(5.0, 8.0);
     self.ballView.layer.shadowOpacity = 0.5;
-    self.ballView.layer.contents = (__bridge id)[UIImage imageNamed:@"images/tj/tjcutout.png"].CGImage;
-    
+    self.ballView.layer.contents = (__bridge id)[UIImage imageNamed:cutoutString].CGImage;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -133,15 +157,20 @@
                                                    mode:UIPushBehaviorModeInstantaneous];
     self.pusher.pushDirection = CGVectorMake(1, 0);
         //Add speed
-    if(self.levelNumber == 1) {
-    self.pusher.magnitude = 0.5;
-    } else if(self.levelNumber ==2 ) {
-        self.pusher.magnitude = 1;
-    } else if(self.levelNumber == 3 ) {
-        self.pusher.magnitude =1.5;
-    } else if(self.levelNumber == 4) {
-        self.pusher.magnitude = 2;
-    }
+//    if(self.levelNumber == 1) {
+//    self.pusher.magnitude = self.speed;
+//        self.speed +=.5;
+//    } else if(self.levelNumber ==2 ) {
+//        self.pusher.magnitude = self.speed;
+//        self.speed +=.5;
+//    } else if(self.levelNumber == 3 ) {
+//        self.pusher.magnitude = self.speed;
+//        self.speed +=.5;
+//    } else if(self.levelNumber == 4) {
+//        self.pusher.magnitude = self.speed;
+//        self.speed +=.5;
+//    }
+    self.pusher.magnitude = self.speed + (self.levelNumber-1)*(self.speed/2);
     self.pusher.active = YES; // Because push is instantaneous, it will only happen once
     [self.animator addBehavior:self.pusher];
     
@@ -169,38 +198,48 @@
 {
     
     if(!self.tapped) {
-    CGPoint point = [self.ballView.superview convertPoint:self.ballView.frame.origin toView:self.view];
-    NSLog(@"%f", point.x);
-    if(abs(point.x - 198) < 10) {
-        NSLog(@"YOU WON");
-        self.levelNumber++;
-        self.pointTotal += 10;
-        self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.pointTotal];
-        self.levelLabel.text = [NSString stringWithFormat:@"Level: %d", self.levelNumber];
+        CGPoint point = [self.ballView.superview convertPoint:self.ballView.frame.origin toView:self.view];
+        NSLog(@"%f", point.x);
+        if(abs(point.x - self.win) < 10) {
+            NSLog(@"YOU WON");
+            self.levelNumber++;
+            self.pointTotal += 10;
+            self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.pointTotal];
+            self.levelLabel.text = [NSString stringWithFormat:@"Level: %d", self.levelNumber];
+            self.won=YES;
+        
             //[self.timer invalidate];
-    }
-    self.animator = nil;
+        }
+        self.animator = nil;
         self.tapped = YES;
     }
     else{
+        if(self.won){
+            self.backgroundView.layer.contents = nil;
+            self.ballView.layer.contents = nil;
+            self.won=NO;
+            [self initializeImage];
+            [self initBehaviors];
+        }else{
             //self.timer=nil;
             //self.timer=[NSTimer timerWithTimeInterval:1.0/10.0 target:self selector:@selector(timerFired:) userInfo:nil repeats:YES];
         
         
         self.tapped = NO;
-    UIImage *cutoutImage = [UIImage imageNamed:@"images/tj/tjcutout.png"];
-    self.ballView.frame = CGRectMake(0, [[UIScreen mainScreen]bounds].size.height/2 -138,cutoutImage.size.width, cutoutImage.size.height);
+   
+    self.ballView.frame = CGRectMake(0, [[UIScreen mainScreen]bounds].size.height/2 +self.dif,self.ballView.frame.size.width, self.ballView.frame.size.height);
     
     
     [self initBehaviors];
+        }
     }
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
-    UIImage *cutoutImage = [UIImage imageNamed:@"images/tj/tjcutout.png"];
-    self.ballView.frame = CGRectMake(0, [[UIScreen mainScreen]bounds].size.height/2 -138,cutoutImage.size.width, cutoutImage.size.height);
+    
+    self.ballView.frame = CGRectMake(0, [[UIScreen mainScreen]bounds].size.height/2 +self.dif,self.ballView.frame.size.width, self.ballView.frame.size.height);
     
     
     [self initBehaviors];
@@ -221,7 +260,7 @@
     self.ballDynamicProperties = nil;
     self.attacher = nil;
     
-    self.ballView.frame = CGRectMake(100.0, 100.0, 64.0, 64.0);
+        //self.ballView.frame = CGRectMake(100.0, 100.0, 64.0, 64.0);
     
     [self initBehaviors];
 }
