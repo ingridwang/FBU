@@ -11,7 +11,9 @@
 @interface Game : NSObject
 @property(nonatomic)BOOL timerOn;
 @property(nonatomic)BOOL speedUp;
-@property(nonatomic)int levelCount;
+@property(nonatomic, weak) UIImage* image;
+@property(nonatomic)int currentLevel;
+
 
 -(instancetype)initWithLevel:(int)level;
 @end

@@ -11,13 +11,19 @@
 @interface PlayViewController ()
 @property (nonatomic, strong) NSTimer *timer;
 @property (nonatomic) CGFloat numberSecondsLeft;
+
+
+
 @end
 
 @implementation PlayViewController
 
+//initWithLevel to find out how many seconds to start the timer on
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0/10.0
                                                   target:self
@@ -25,6 +31,10 @@
                                                 userInfo:nil
                                                  repeats:YES];
     [self setNumberSecondsLeft:10.0];
+    //self setNumberSecondsLeft:self.game.currentLevel
+    //if like level 1 10
+    //if level like 2 then 8
+    //if level 3 then 5
 }
 
 - (void)timerFired:(NSTimer *)timer {
