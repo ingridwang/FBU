@@ -21,11 +21,11 @@
 @property (nonatomic, strong) UICollisionBehavior *collider;
 @property (nonatomic, strong) UIDynamicItemBehavior *ballDynamicProperties;
 @property (nonatomic, strong) UIAttachmentBehavior *attacher;
-@property (nonatomic) BOOL *tapped;
+@property (nonatomic) BOOL tapped;
 @property int dif;
 @property int win;
 @property int speed;
-@property(nonatomic)BOOL* won;
+@property(nonatomic)BOOL won;
 @end
 
 
