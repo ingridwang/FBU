@@ -15,6 +15,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property(weak, nonatomic)IBOutlet UILabel* levelLabel;
 @property(nonatomic)BOOL timerOn;
 @property(nonatomic)BOOL speedUp;
 
