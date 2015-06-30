@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		665DC8AB1B4334A4002C19E0 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 665DC8AA1B4334A4002C19E0 /* images */; };
 		A3286A8F1B41C986007DF257 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3286A8E1B41C986007DF257 /* main.m */; };
 		A3286A921B41C986007DF257 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3286A911B41C986007DF257 /* AppDelegate.m */; };
 		A3286A951B41C986007DF257 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3286A941B41C986007DF257 /* ViewController.m */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		665DC8AA1B4334A4002C19E0 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		A3286A891B41C986007DF257 /* game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3286A8D1B41C986007DF257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3286A8E1B41C986007DF257 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				A3286AB21B41F367007DF257 /* PlayViewController.h */,
 				A3286AB31B41F367007DF257 /* PlayViewController.m */,
 				A3286AB51B41F383007DF257 /* PauseViewController.h */,
+				665DC8AA1B4334A4002C19E0 /* images */,
 				A3286AB61B41F383007DF257 /* PauseViewController.m */,
 				A3286A991B41C986007DF257 /* Images.xcassets */,
 				A3286A9B1B41C986007DF257 /* LaunchScreen.xib */,
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				665DC8AB1B4334A4002C19E0 /* images in Resources */,
 				A3286A981B41C986007DF257 /* Main.storyboard in Resources */,
 				A3286A9D1B41C986007DF257 /* LaunchScreen.xib in Resources */,
 				A3286A9A1B41C986007DF257 /* Images.xcassets in Resources */,

@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QS-zx-E10">
-                                <rect key="frame" x="0.0" y="64" width="600" height="168"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="168"/>
                                 <color key="backgroundColor" red="0.93172341791013624" green="0.97513743755960691" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="36"/>
                                 <state key="normal" title="HOW TO PLAY">
@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjL-Op-CP9">
-                                <rect key="frame" x="0.0" y="232" width="600" height="198"/>
+                                <rect key="frame" x="0.0" y="188" width="600" height="198"/>
                                 <color key="backgroundColor" red="0.76414052246194086" green="0.90150853608593462" blue="0.96863162878787878" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="36"/>
                                 <state key="normal" title="SETTINGS">
@@ -117,7 +117,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1ik-Z6-vSB">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Tap to stop the cutout and try to place it in its original spot! The further you get in the game, the faster it will go! You can disable the time limit and whether or not each level speeds up in the Settings menu. Happy Matching!</string>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="25"/>
@@ -150,9 +150,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d8m-wB-5ci">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeY-rM-WNt">
                                 <rect key="frame" x="-38" y="94" width="0.0" height="0.0"/>
                                 <color key="backgroundColor" red="0.69555808870000002" green="0.91155160869999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -160,7 +157,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t10-Fu-7w3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t10-Fu-7w3">
                                 <rect key="frame" x="242" y="556" width="117" height="44"/>
                                 <color key="backgroundColor" red="0.69555808870000002" green="0.91155160869999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -213,7 +210,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFR-Zx-tsJ">
-                                <rect key="frame" x="530" y="64" width="70" height="41"/>
+                                <rect key="frame" x="530" y="20" width="70" height="41"/>
                                 <color key="backgroundColor" red="0.76414052249999997" green="0.90150853610000004" blue="0.96863162879999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="WLV-uu-1Kp"/>
@@ -232,30 +229,26 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="t10-Fu-7w3" firstAttribute="height" secondItem="kFZ-hl-oE7" secondAttribute="height" id="1vX-h9-Di0"/>
-                            <constraint firstItem="FQ6-yO-tcn" firstAttribute="top" secondItem="JjP-dD-ekL" secondAttribute="bottom" id="2z9-nU-Fsf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TFR-Zx-tsJ" secondAttribute="trailing" constant="-16" id="36R-uD-Kmh"/>
-                            <constraint firstItem="FQ6-yO-tcn" firstAttribute="top" secondItem="sSw-hz-DTc" secondAttribute="bottom" id="39e-QN-QUt"/>
                             <constraint firstItem="t10-Fu-7w3" firstAttribute="leading" secondItem="JjP-dD-ekL" secondAttribute="trailing" id="4RX-Xj-0Pz"/>
                             <constraint firstItem="kFZ-hl-oE7" firstAttribute="height" secondItem="JjP-dD-ekL" secondAttribute="height" id="4wG-Y8-Pmc"/>
                             <constraint firstItem="t10-Fu-7w3" firstAttribute="centerY" secondItem="ra4-B6-s9A" secondAttribute="centerY" id="5Pb-Zg-BxM"/>
                             <constraint firstItem="ra4-B6-s9A" firstAttribute="leading" secondItem="sSw-hz-DTc" secondAttribute="trailing" constant="-3" id="5m7-96-zWn"/>
                             <constraint firstItem="sSw-hz-DTc" firstAttribute="height" secondItem="t10-Fu-7w3" secondAttribute="height" id="9r6-80-HZ8"/>
-                            <constraint firstItem="d8m-wB-5ci" firstAttribute="leading" secondItem="R0l-L4-qA5" secondAttribute="leading" id="Bj3-UA-Yo2"/>
-                            <constraint firstItem="FQ6-yO-tcn" firstAttribute="top" secondItem="t10-Fu-7w3" secondAttribute="bottom" id="JOh-FK-rfd"/>
+                            <constraint firstItem="FQ6-yO-tcn" firstAttribute="top" secondItem="JjP-dD-ekL" secondAttribute="bottom" id="GCv-JM-CQi"/>
+                            <constraint firstItem="TFR-Zx-tsJ" firstAttribute="top" secondItem="QgQ-rO-5xK" secondAttribute="bottom" id="IBj-jU-0RW"/>
                             <constraint firstItem="ra4-B6-s9A" firstAttribute="leading" secondItem="R0l-L4-qA5" secondAttribute="leadingMargin" constant="434" id="KNf-yq-FB9"/>
+                            <constraint firstItem="FQ6-yO-tcn" firstAttribute="top" secondItem="sSw-hz-DTc" secondAttribute="bottom" id="Kbj-De-hE6"/>
                             <constraint firstItem="t10-Fu-7w3" firstAttribute="trailing" secondItem="R0l-L4-qA5" secondAttribute="trailingMargin" constant="-225" id="Ram-uK-kNT"/>
-                            <constraint firstItem="d8m-wB-5ci" firstAttribute="top" secondItem="R0l-L4-qA5" secondAttribute="top" id="b8o-Hd-XFX"/>
-                            <constraint firstItem="FQ6-yO-tcn" firstAttribute="top" secondItem="d8m-wB-5ci" secondAttribute="bottom" id="cTa-CD-LIu"/>
                             <constraint firstItem="JjP-dD-ekL" firstAttribute="leading" secondItem="kFZ-hl-oE7" secondAttribute="trailing" constant="-3" id="eP3-FG-xo7"/>
-                            <constraint firstItem="TFR-Zx-tsJ" firstAttribute="top" secondItem="QgQ-rO-5xK" secondAttribute="bottom" id="fBA-IX-c3i"/>
-                            <constraint firstItem="FQ6-yO-tcn" firstAttribute="top" secondItem="ra4-B6-s9A" secondAttribute="bottom" id="gDp-hl-1Lb"/>
+                            <constraint firstItem="FQ6-yO-tcn" firstAttribute="top" secondItem="ra4-B6-s9A" secondAttribute="bottom" id="fD5-Pv-eBD"/>
                             <constraint firstAttribute="centerX" secondItem="t10-Fu-7w3" secondAttribute="centerX" id="jcx-zs-SdJ"/>
                             <constraint firstItem="kFZ-hl-oE7" firstAttribute="leading" secondItem="R0l-L4-qA5" secondAttribute="leadingMargin" constant="-16" id="mP3-Iq-EUR"/>
                             <constraint firstItem="t10-Fu-7w3" firstAttribute="height" secondItem="ra4-B6-s9A" secondAttribute="height" id="meP-01-RTU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ra4-B6-s9A" secondAttribute="trailing" constant="-16" id="oUF-B3-ah3"/>
-                            <constraint firstItem="FQ6-yO-tcn" firstAttribute="top" secondItem="kFZ-hl-oE7" secondAttribute="bottom" id="qnA-dz-Yfu"/>
+                            <constraint firstItem="FQ6-yO-tcn" firstAttribute="top" secondItem="t10-Fu-7w3" secondAttribute="bottom" id="qKC-om-0TM"/>
                             <constraint firstItem="sSw-hz-DTc" firstAttribute="leading" secondItem="t10-Fu-7w3" secondAttribute="trailing" constant="-4" id="vEr-7K-vg8"/>
-                            <constraint firstAttribute="trailing" secondItem="d8m-wB-5ci" secondAttribute="trailing" id="zmE-UG-VpD"/>
+                            <constraint firstItem="FQ6-yO-tcn" firstAttribute="top" secondItem="kFZ-hl-oE7" secondAttribute="bottom" id="w13-bZ-Vl0"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
