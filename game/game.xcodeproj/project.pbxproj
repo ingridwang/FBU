@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		665DC8311B42166C002C19E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665DC8301B42166C002C19E0 /* Main.storyboard */; };
+		66CE48C21B41EE7A003E05DE /* imageMover.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CE48C11B41EE7A003E05DE /* imageMover.m */; };
 		A3286A8F1B41C986007DF257 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3286A8E1B41C986007DF257 /* main.m */; };
 		A3286A921B41C986007DF257 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3286A911B41C986007DF257 /* AppDelegate.m */; };
 		A3286A951B41C986007DF257 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3286A941B41C986007DF257 /* ViewController.m */; };
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		665DC8301B42166C002C19E0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../Desktop/Main.storyboard; sourceTree = "<group>"; };
+		66CE48C01B41EE7A003E05DE /* imageMover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageMover.h; sourceTree = "<group>"; };
+		66CE48C11B41EE7A003E05DE /* imageMover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageMover.m; sourceTree = "<group>"; };
 		A3286A891B41C986007DF257 /* game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3286A8D1B41C986007DF257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3286A8E1B41C986007DF257 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,7 +90,10 @@
 				A3286A911B41C986007DF257 /* AppDelegate.m */,
 				A3286A931B41C986007DF257 /* ViewController.h */,
 				A3286A941B41C986007DF257 /* ViewController.m */,
+				66CE48C01B41EE7A003E05DE /* imageMover.h */,
+				66CE48C11B41EE7A003E05DE /* imageMover.m */,
 				A3286A961B41C986007DF257 /* Main.storyboard */,
+				665DC8301B42166C002C19E0 /* Main.storyboard */,
 				A3286A991B41C986007DF257 /* Images.xcassets */,
 				A3286A9B1B41C986007DF257 /* LaunchScreen.xib */,
 				A3286A8C1B41C986007DF257 /* Supporting Files */,
@@ -202,6 +210,7 @@
 				A3286A981B41C986007DF257 /* Main.storyboard in Resources */,
 				A3286A9D1B41C986007DF257 /* LaunchScreen.xib in Resources */,
 				A3286A9A1B41C986007DF257 /* Images.xcassets in Resources */,
+				665DC8311B42166C002C19E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +231,7 @@
 				A3286A951B41C986007DF257 /* ViewController.m in Sources */,
 				A3286A921B41C986007DF257 /* AppDelegate.m in Sources */,
 				A3286A8F1B41C986007DF257 /* main.m in Sources */,
+				66CE48C21B41EE7A003E05DE /* imageMover.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +428,7 @@
 				A3286AAE1B41C986007DF257 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3286AAF1B41C986007DF257 /* Build configuration list for PBXNativeTarget "gameTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +437,7 @@
 				A3286AB11B41C986007DF257 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

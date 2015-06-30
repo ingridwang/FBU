@@ -9,7 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIImageView *mover;
 
+@property (strong, nonatomic) IBOutlet UIView *windowView;
+@property ( nonatomic) int desiredx;
+@property ( nonatomic) int desiredy;
+@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tap;
 
 @end
 
