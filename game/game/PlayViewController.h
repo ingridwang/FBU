@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface PlayViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property(nonatomic)BOOL timerOn;
+@property(nonatomic)BOOL speedUp;
 
 @end
