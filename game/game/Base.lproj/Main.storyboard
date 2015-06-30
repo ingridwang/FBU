@@ -138,34 +138,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d8m-wB-5ci">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Points Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEY-LY-5yg">
-                                <rect key="frame" x="-98" y="16" width="150" height="44"/>
-                                <color key="backgroundColor" red="0.69555808870000002" green="0.91155160869999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="IMs-Kn-Kn4"/>
-                                    <constraint firstAttribute="width" constant="150" id="wTY-Fy-eBW"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t10-Fu-7w3">
                                 <rect key="frame" x="242" y="556" width="117" height="44"/>
                                 <color key="backgroundColor" red="0.69555808870000002" green="0.91155160869999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Irn-n9-5gb"/>
                                     <constraint firstAttribute="width" constant="117" id="O4l-PD-qtn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ra4-B6-s9A">
-                                <rect key="frame" x="450" y="556" width="150" height="44"/>
-                                <color key="backgroundColor" red="0.69555808870000002" green="0.91155160869999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="gi6-Vo-MV4"/>
-                                    <constraint firstAttribute="height" constant="44" id="tnA-pV-0Wm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -181,6 +159,23 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ra4-B6-s9A">
+                                <rect key="frame" x="450" y="556" width="150" height="44"/>
+                                <color key="backgroundColor" red="0.69555808870000002" green="0.91155160869999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="1kC-I1-xFv"/>
+                                    <constraint firstAttribute="width" constant="150" id="gi6-Vo-MV4"/>
+                                    <constraint firstAttribute="height" constant="44" id="tnA-pV-0Wm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1kC-I1-xFv"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -193,11 +188,19 @@
                             <constraint firstItem="d8m-wB-5ci" firstAttribute="top" secondItem="R0l-L4-qA5" secondAttribute="top" id="b8o-Hd-XFX"/>
                             <constraint firstItem="FQ6-yO-tcn" firstAttribute="top" secondItem="d8m-wB-5ci" secondAttribute="bottom" id="cTa-CD-LIu"/>
                             <constraint firstItem="FQ6-yO-tcn" firstAttribute="top" secondItem="ra4-B6-s9A" secondAttribute="bottom" id="gDp-hl-1Lb"/>
+                            <constraint firstAttribute="centerX" secondItem="t10-Fu-7w3" secondAttribute="centerX" id="jcx-zs-SdJ"/>
                             <constraint firstItem="kFZ-hl-oE7" firstAttribute="leading" secondItem="R0l-L4-qA5" secondAttribute="leadingMargin" constant="-16" id="mP3-Iq-EUR"/>
                             <constraint firstItem="t10-Fu-7w3" firstAttribute="height" secondItem="ra4-B6-s9A" secondAttribute="height" id="meP-01-RTU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ra4-B6-s9A" secondAttribute="trailing" constant="-16" id="oUF-B3-ah3"/>
                             <constraint firstItem="FQ6-yO-tcn" firstAttribute="top" secondItem="kFZ-hl-oE7" secondAttribute="bottom" id="qnA-dz-Yfu"/>
                             <constraint firstAttribute="trailing" secondItem="d8m-wB-5ci" secondAttribute="trailing" id="zmE-UG-VpD"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ram-uK-kNT"/>
+                                <exclude reference="KNf-yq-FB9"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Bwg-1N-wgh">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="pause" id="Kvt-DQ-6Lh">
