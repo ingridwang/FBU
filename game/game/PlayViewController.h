@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class Game;
 @interface PlayViewController : UIViewController
-@property(nonatomic)BOOL timerOn;
-@property(nonatomic)BOOL speedUp;
+
+@property(strong, nonatomic)Game* game;
 
 @end
