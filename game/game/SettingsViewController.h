@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SettingsViewController.h
 //  game
 //
 //  Created by Rebecca Chen on 6/29/15.
@@ -8,7 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-//property for score, level, current speed
+@interface SettingsViewController : UIViewController
 @end
-

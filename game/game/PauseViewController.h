@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PauseViewController.h
 //  game
 //
 //  Created by Rebecca Chen on 6/29/15.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-//property for score, level, current speed
-@end
+@interface PauseViewController : UIViewController
 
+@end
