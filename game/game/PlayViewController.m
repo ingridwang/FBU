@@ -199,14 +199,19 @@
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
-
+    UIImage *cutoutImage = [UIImage imageNamed:@"images/tj/tjcutout.png"];
+    self.ballView.frame = CGRectMake(0, [[UIScreen mainScreen]bounds].size.height/2 -138,cutoutImage.size.width, cutoutImage.size.height);
     
+    
+    [self initBehaviors];
+}
+
 //
     
 //    self.animator = nil;
 //    self.collider = nil;
 //    self.pusher = nil;
-}
+
 
 - (void)reset
 {
