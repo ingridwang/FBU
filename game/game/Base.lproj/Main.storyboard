@@ -173,7 +173,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFZ-hl-oE7">
                                 <rect key="frame" x="0.0" y="556" width="131" height="44"/>
-                                <color key="backgroundColor" red="0.79681654229999999" green="0.86916761330000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.69555808870000002" green="0.91155160869999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="131" id="tJC-0m-RAh"/>
                                 </constraints>
