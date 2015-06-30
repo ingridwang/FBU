@@ -28,8 +28,11 @@
 }
 
 - (void)timerFired:(NSTimer *)timer {
-    self.numberSecondsLeft -= 0.10;
-    self.timerLabel.text = [NSString stringWithFormat:@"%.1f", self.numberSecondsLeft];
+    if (self.numberSecondsLeft > 0.1) {
+        self.numberSecondsLeft -= 0.10;
+        self.timerLabel.text = [NSString stringWithFormat:@"%.1f", self.numberSecondsLeft];
+    }
+    //
 }
 
 -(void)viewWillAppear:(BOOL)animated{
