@@ -10,6 +10,12 @@
 @class Game;
 @interface PlayViewController : UIViewController
 
+
 @property(strong, nonatomic)Game* game;
+
+@property (weak, nonatomic) IBOutlet UILabel *timerLabel;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property(nonatomic)BOOL timerOn;
+@property(nonatomic)BOOL speedUp;
 
 @end
